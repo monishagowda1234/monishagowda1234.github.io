@@ -1,214 +1,152 @@
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:'Poppins',sans-serif;
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
 }
 
 html{
-    scroll-behavior:smooth;
+scroll-behavior:smooth;
 }
 
 body{
-    background:#0f172a;
-    color:white;
+background:#0f172a;
+color:white;
 }
 
-/* NAVBAR */
-
 nav{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:20px 10%;
-    background:#111827;
-    position:sticky;
-    top:0;
-    z-index:1000;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 8%;
+background:#111827;
+position:sticky;
+top:0;
+z-index:1000;
 }
 
 .logo{
-    font-size:24px;
-    font-weight:700;
-    color:#38bdf8;
+font-size:28px;
+font-weight:700;
+color:#38bdf8;
 }
 
 nav ul{
-    display:flex;
-    list-style:none;
+display:flex;
+list-style:none;
 }
 
 nav ul li{
-    margin-left:30px;
+margin-left:25px;
 }
 
 nav ul li a{
-    text-decoration:none;
-    color:white;
-    transition:0.3s;
+text-decoration:none;
+color:white;
 }
 
 nav ul li a:hover{
-    color:#38bdf8;
+color:#38bdf8;
 }
-
-/* HERO */
 
 .hero{
-    height:90vh;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-    padding:20px;
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
 }
 
-.hero-content h1{
-    font-size:60px;
-    margin-bottom:10px;
+.hero h1{
+font-size:70px;
 }
 
-.hero-content span{
-    color:#38bdf8;
+.hero span{
+color:#38bdf8;
 }
 
-.hero-content h2{
-    font-size:30px;
-    color:#cbd5e1;
-    margin-bottom:20px;
+.hero h2{
+margin-top:20px;
+color:#cbd5e1;
 }
 
-.hero-content p{
-    max-width:700px;
-    margin:auto;
-    line-height:1.8;
-    color:#94a3b8;
-    margin-bottom:30px;
-}
-
-.hero-buttons{
-    display:flex;
-    justify-content:center;
-    gap:20px;
+.hero p{
+max-width:700px;
+margin:20px auto;
+line-height:1.8;
+color:#94a3b8;
 }
 
 .btn{
-    background:#38bdf8;
-    color:black;
-    text-decoration:none;
-    padding:12px 30px;
-    border-radius:10px;
-    font-weight:600;
-    transition:0.3s;
+display:inline-block;
+padding:15px 30px;
+background:#38bdf8;
+color:black;
+text-decoration:none;
+border-radius:10px;
+font-weight:600;
 }
-
-.btn:hover{
-    transform:translateY(-3px);
-}
-
-.btn-secondary{
-    border:2px solid #38bdf8;
-    color:#38bdf8;
-    text-decoration:none;
-    padding:12px 30px;
-    border-radius:10px;
-    transition:0.3s;
-}
-
-.btn-secondary:hover{
-    background:#38bdf8;
-    color:black;
-}
-
-/* COMMON SECTION */
 
 .section{
-    padding:100px 10%;
+padding:100px 10%;
 }
 
-.section-title{
-    text-align:center;
-    font-size:40px;
-    color:#38bdf8;
-    margin-bottom:50px;
+.section h2{
+text-align:center;
+margin-bottom:40px;
+font-size:40px;
+color:#38bdf8;
 }
 
-/* ABOUT */
-
-.about-container{
-    max-width:900px;
-    margin:auto;
-    background:#1e293b;
-    padding:40px;
-    border-radius:20px;
-    line-height:2;
-    text-align:center;
-    color:#cbd5e1;
-    font-size:18px;
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
 }
 
-/* EDUCATION */
-
-.education-container{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-    gap:30px;
+.card{
+background:#1e293b;
+padding:30px;
+border-radius:20px;
+line-height:1.8;
+transition:0.3s;
 }
 
-.edu-card{
-    background:#1e293b;
-    padding:30px;
-    border-radius:20px;
-    transition:0.3s;
+.card:hover{
+transform:translateY(-8px);
 }
 
-.edu-card:hover{
-    transform:translateY(-8px);
+.card h3{
+margin-bottom:15px;
+color:#38bdf8;
 }
 
-.edu-card h3{
-    color:#38bdf8;
-    margin-bottom:15px;
+footer{
+text-align:center;
+padding:30px;
+background:#111827;
+margin-top:50px;
 }
-
-.edu-card p{
-    color:#cbd5e1;
-    margin-bottom:10px;
-}
-
-.edu-card span{
-    color:#94a3b8;
-}
-
-/* RESPONSIVE */
 
 @media(max-width:768px){
 
-    nav{
-        flex-direction:column;
-    }
+nav{
+flex-direction:column;
+}
 
-    nav ul{
-        margin-top:15px;
-        flex-wrap:wrap;
-        justify-content:center;
-    }
+nav ul{
+flex-wrap:wrap;
+justify-content:center;
+margin-top:15px;
+}
 
-    nav ul li{
-        margin:10px;
-    }
+.hero h1{
+font-size:45px;
+}
 
-    .hero-content h1{
-        font-size:40px;
-    }
-
-    .hero-content h2{
-        font-size:22px;
-    }
-
-    .hero-buttons{
-        flex-direction:column;
-        align-items:center;
-    }
+.section{
+padding:80px 5%;
+}
 
 }
