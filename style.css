@@ -20,13 +20,10 @@ nav{
     display:flex;
     justify-content:space-between;
     align-items:center;
-
     padding:20px 10%;
     background:#111827;
-
     position:sticky;
     top:0;
-
     z-index:1000;
 }
 
@@ -55,17 +52,14 @@ nav ul li a:hover{
     color:#38bdf8;
 }
 
-/* HERO SECTION */
+/* HERO */
 
 .hero{
     height:90vh;
-
     display:flex;
     justify-content:center;
     align-items:center;
-
     text-align:center;
-
     padding:20px;
 }
 
@@ -87,10 +81,8 @@ nav ul li a:hover{
 .hero-content p{
     max-width:700px;
     margin:auto;
-
     line-height:1.8;
     color:#94a3b8;
-
     margin-bottom:30px;
 }
 
@@ -103,14 +95,10 @@ nav ul li a:hover{
 .btn{
     background:#38bdf8;
     color:black;
-
     text-decoration:none;
-
     padding:12px 30px;
     border-radius:10px;
-
     font-weight:600;
-
     transition:0.3s;
 }
 
@@ -120,17 +108,107 @@ nav ul li a:hover{
 
 .btn-secondary{
     border:2px solid #38bdf8;
-
     color:#38bdf8;
     text-decoration:none;
-
     padding:12px 30px;
     border-radius:10px;
-
     transition:0.3s;
 }
 
 .btn-secondary:hover{
     background:#38bdf8;
     color:black;
+}
+
+/* COMMON SECTION */
+
+.section{
+    padding:100px 10%;
+}
+
+.section-title{
+    text-align:center;
+    font-size:40px;
+    color:#38bdf8;
+    margin-bottom:50px;
+}
+
+/* ABOUT */
+
+.about-container{
+    max-width:900px;
+    margin:auto;
+    background:#1e293b;
+    padding:40px;
+    border-radius:20px;
+    line-height:2;
+    text-align:center;
+    color:#cbd5e1;
+    font-size:18px;
+}
+
+/* EDUCATION */
+
+.education-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+.edu-card{
+    background:#1e293b;
+    padding:30px;
+    border-radius:20px;
+    transition:0.3s;
+}
+
+.edu-card:hover{
+    transform:translateY(-8px);
+}
+
+.edu-card h3{
+    color:#38bdf8;
+    margin-bottom:15px;
+}
+
+.edu-card p{
+    color:#cbd5e1;
+    margin-bottom:10px;
+}
+
+.edu-card span{
+    color:#94a3b8;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+    nav{
+        flex-direction:column;
+    }
+
+    nav ul{
+        margin-top:15px;
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    nav ul li{
+        margin:10px;
+    }
+
+    .hero-content h1{
+        font-size:40px;
+    }
+
+    .hero-content h2{
+        font-size:22px;
+    }
+
+    .hero-buttons{
+        flex-direction:column;
+        align-items:center;
+    }
+
 }
