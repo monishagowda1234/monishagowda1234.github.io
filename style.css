@@ -1,152 +1,239 @@
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:'Poppins',sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
 }
 
 html{
-scroll-behavior:smooth;
+    scroll-behavior:smooth;
 }
 
 body{
-background:#0f172a;
-color:white;
+    background:#0f172a;
+    color:white;
+    line-height:1.7;
 }
 
+/* NAVBAR */
+
 nav{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:20px 8%;
-background:#111827;
-position:sticky;
-top:0;
-z-index:1000;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    background:#111827;
+    position:sticky;
+    top:0;
+    z-index:1000;
 }
 
 .logo{
-font-size:28px;
-font-weight:700;
-color:#38bdf8;
+    font-size:28px;
+    font-weight:700;
+    color:#38bdf8;
 }
 
 nav ul{
-display:flex;
-list-style:none;
+    display:flex;
+    list-style:none;
 }
 
 nav ul li{
-margin-left:25px;
+    margin-left:25px;
 }
 
 nav ul li a{
-text-decoration:none;
-color:white;
+    text-decoration:none;
+    color:white;
+    font-weight:500;
+    transition:0.3s;
 }
 
 nav ul li a:hover{
-color:#38bdf8;
+    color:#38bdf8;
 }
 
+/* HERO SECTION */
+
 .hero{
-height:100vh;
-display:flex;
-justify-content:center;
-align-items:center;
-text-align:center;
-padding:20px;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:40px;
 }
 
 .hero h1{
-font-size:70px;
+    font-size:70px;
+    margin-bottom:10px;
 }
 
 .hero span{
-color:#38bdf8;
+    color:#38bdf8;
 }
 
 .hero h2{
-margin-top:20px;
-color:#cbd5e1;
+    margin-top:20px;
+    color:#cbd5e1;
 }
 
 .hero p{
-max-width:700px;
-margin:20px auto;
-line-height:1.8;
-color:#94a3b8;
+    max-width:700px;
+    margin:20px auto;
+    color:#94a3b8;
 }
 
 .btn{
-display:inline-block;
-padding:15px 30px;
-background:#38bdf8;
-color:black;
-text-decoration:none;
-border-radius:10px;
-font-weight:600;
+    display:inline-block;
+    padding:15px 30px;
+    background:#38bdf8;
+    color:black;
+    text-decoration:none;
+    border-radius:10px;
+    font-weight:600;
+    transition:0.3s;
 }
 
+.btn:hover{
+    transform:translateY(-4px);
+}
+
+/* SECTIONS */
+
 .section{
-padding:100px 10%;
+    padding:90px 10%;
 }
 
 .section h2{
-text-align:center;
-margin-bottom:40px;
-font-size:40px;
-color:#38bdf8;
+    text-align:center;
+    margin-bottom:40px;
+    font-size:40px;
+    color:#38bdf8;
 }
+
+/* ABOUT SECTION */
+
+#about .card{
+    max-width:900px;
+    margin:auto;
+    text-align:center;
+    font-size:18px;
+}
+
+/* GRID */
 
 .grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-gap:25px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
 }
 
+/* CARDS */
+
 .card{
-background:#1e293b;
-padding:30px;
-border-radius:20px;
-line-height:1.8;
-transition:0.3s;
+    background:#1e293b;
+    padding:30px;
+    border-radius:20px;
+    line-height:1.8;
+    box-shadow:0 5px 15px rgba(0,0,0,0.25);
+    transition:0.3s;
 }
 
 .card:hover{
-transform:translateY(-8px);
+    transform:translateY(-8px);
+    box-shadow:0 10px 25px rgba(56,189,248,0.25);
 }
 
 .card h3{
-margin-bottom:15px;
-color:#38bdf8;
+    margin-bottom:15px;
+    color:#38bdf8;
 }
 
-footer{
-text-align:center;
-padding:30px;
-background:#111827;
-margin-top:50px;
+.card p{
+    margin-bottom:10px;
 }
+
+/* SKILLS */
+
+#skills .card{
+    text-align:center;
+    font-size:18px;
+    font-weight:600;
+    cursor:pointer;
+}
+
+/* PROJECTS */
+
+#projects .card{
+    min-height:220px;
+}
+
+#projects .card p{
+    color:#cbd5e1;
+}
+
+/* INTERNSHIP */
+
+#internship .card{
+    max-width:900px;
+    margin:auto;
+}
+
+#internship ul{
+    margin-top:15px;
+    padding-left:20px;
+}
+
+#internship li{
+    margin-bottom:10px;
+}
+
+/* CONTACT */
+
+#contact .card{
+    max-width:700px;
+    margin:auto;
+    text-align:center;
+}
+
+/* FOOTER */
+
+footer{
+    text-align:center;
+    padding:30px;
+    background:#111827;
+    margin-top:50px;
+}
+
+/* MOBILE */
 
 @media(max-width:768px){
 
-nav{
-flex-direction:column;
-}
+    nav{
+        flex-direction:column;
+    }
 
-nav ul{
-flex-wrap:wrap;
-justify-content:center;
-margin-top:15px;
-}
+    nav ul{
+        flex-wrap:wrap;
+        justify-content:center;
+        margin-top:15px;
+    }
 
-.hero h1{
-font-size:45px;
-}
+    nav ul li{
+        margin:10px;
+    }
 
-.section{
-padding:80px 5%;
-}
+    .hero h1{
+        font-size:45px;
+    }
 
+    .hero h2{
+        font-size:22px;
+    }
+
+    .section{
+        padding:70px 5%;
+    }
 }
