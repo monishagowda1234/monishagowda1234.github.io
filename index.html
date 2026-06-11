@@ -1,134 +1,251 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Monisha D A | Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="style.css">
+<title>Monisha D A | Portfolio</title>
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-    <!-- NAVBAR -->
+<nav>
+    <div class="logo">Monisha D A</div>
 
-    <nav>
-        <div class="logo">
-            Monisha D A
-        </div>
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#internship">Internship</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
 
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+<section class="hero">
 
-    <!-- HERO SECTION -->
+    <div class="hero-content">
 
-    <section class="hero">
+        <h1>Hi, I'm <span>Monisha D A</span></h1>
 
-        <div class="hero-content">
+        <h2 id="typing"></h2>
 
-            <h1>Hi, I'm <span>Monisha D A</span></h1>
+        <p>
+            Passionate about Software Development,
+            Data Analytics, Artificial Intelligence,
+            and Cyber Security.
+        </p>
 
-            <h2>Information Science Engineering Student</h2>
+        <a href="#projects" class="btn">
+            View Projects
+        </a>
 
-            <p>
-                Passionate about Software Development,
-                Data Analytics, Artificial Intelligence,
-                and Cyber Security.
-            </p>
+    </div>
 
-            <div class="hero-buttons">
-
-                <a href="#projects" class="btn">
-                    View Projects
-                </a>
-
-                <a href="#contact" class="btn-secondary">
-                    Contact Me
-                </a>
-
-            </div>
-
-        </div>
-
-    </section>
-    <!-- ABOUT SECTION -->
+</section>
 
 <section id="about" class="section">
 
-    <h2 class="section-title">About Me</h2>
+    <h2>About Me</h2>
 
-    <div class="about-container">
-
+    <div class="card">
         <p>
-            I am an Information Science and Engineering student at
+            I am an Information Science Engineering student at
             The National Institute of Engineering, Mysore.
 
-            I am passionate about Software Development, Data Analytics,
-            Artificial Intelligence, and Cyber Security.
+            I am passionate about software development,
+            AI, data analytics and cybersecurity.
 
-            I enjoy building practical applications, solving real-world
-            problems, and continuously learning new technologies.
-
-            My goal is to become a skilled Software Engineer capable of
-            creating innovative and impactful solutions.
+            My goal is to become a software engineer
+            who creates innovative and impactful solutions.
         </p>
-
     </div>
 
 </section>
-
-<!-- EDUCATION SECTION -->
 
 <section id="education" class="section">
 
-    <h2 class="section-title">Education</h2>
+    <h2>Education</h2>
 
-    <div class="education-container">
+    <div class="grid">
 
-        <div class="edu-card">
-
+        <div class="card">
             <h3>B.E Information Science & Engineering</h3>
-
-            <p>The National Institute of Engineering, Mysore</p>
-
-            <span>2024 - 2027</span>
-
+            <p>The National Institute of Engineering</p>
+            <p>Expected Graduation: 2027</p>
         </div>
 
-        <div class="edu-card">
-
+        <div class="card">
             <h3>Diploma in Computer Science</h3>
-
-            <p>Government Polytechnic College, KR Pete</p>
-
-            <span>CGPA: 9.03 / 10</span>
-
+            <p>Government Polytechnic College</p>
+            <p>CGPA: 9.03</p>
         </div>
 
-        <div class="edu-card">
-
+        <div class="card">
             <h3>SSLC</h3>
-
             <p>Morarji Desai Residential School</p>
-
-            <span>90%</span>
-
+            <p>90%</p>
         </div>
 
     </div>
 
 </section>
 
-</body>
+<section id="skills" class="section">
 
+    <h2>Technical Skills</h2>
+
+    <div class="grid">
+
+        <div class="card">Java</div>
+        <div class="card">Python</div>
+        <div class="card">SQL</div>
+        <div class="card">HTML</div>
+        <div class="card">CSS</div>
+        <div class="card">JavaScript</div>
+        <div class="card">MySQL</div>
+        <div class="card">Power BI</div>
+        <div class="card">Git</div>
+        <div class="card">GitHub</div>
+
+    </div>
+
+</section>
+
+<section id="projects" class="section">
+
+    <h2>Projects</h2>
+
+    <div class="grid">
+
+        <div class="card">
+            <h3>Edge AI Energy Forecasting</h3>
+            <p>
+                ESP32-S3 based TinyML system
+                for local energy prediction.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Road Accident Analysis Dashboard</h3>
+            <p>
+                Power BI dashboard for accident trend analysis.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Online Quiz Web Application</h3>
+            <p>
+                Quiz platform using HTML, CSS,
+                JavaScript and SQL.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Task Scheduling System</h3>
+            <p>
+                Web-based task management
+                and tracking system.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<section id="internship" class="section">
+
+    <h2>Internship Experience</h2>
+
+    <div class="card">
+
+        <h3>Cyber Security Intern</h3>
+
+        <p>RINEX</p>
+
+        <p>January 2024 - April 2024</p>
+
+        <ul>
+            <li>Worked on cyber security fundamentals.</li>
+            <li>Studied vulnerability assessment.</li>
+            <li>Developed Error Detection Application.</li>
+        </ul>
+
+    </div>
+
+</section>
+
+<section class="section">
+
+    <h2>Certifications</h2>
+
+    <div class="grid">
+
+        <div class="card">
+            Cyber Security with Ethical Hacking
+        </div>
+
+        <div class="card">
+            Power BI Fundamentals
+        </div>
+
+        <div class="card">
+            Java Programming
+        </div>
+
+    </div>
+
+</section>
+
+<section class="section">
+
+    <h2>Achievements</h2>
+
+    <div class="grid">
+
+        <div class="card">
+            Prathibha Puraskara Awardee
+        </div>
+
+        <div class="card">
+            Diploma CGPA 9.03
+        </div>
+
+        <div class="card">
+            Sports Participation
+        </div>
+
+    </div>
+
+</section>
+
+<section id="contact" class="section">
+
+    <h2>Contact</h2>
+
+    <div class="card">
+
+        <p>Email: monishaashwath2503@gmail.com</p>
+
+        <p>Phone: +91 6361563112</p>
+
+        <p>LinkedIn: Add Your LinkedIn Link</p>
+
+        <p>GitHub: github.com/monishagowda1234</p>
+
+    </div>
+
+</section>
+
+<footer>
+    © 2026 Monisha D A | Portfolio
+</footer>
+
+<script src="script.js"></script>
+
+</body>
 </html>
